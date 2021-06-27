@@ -1,0 +1,840 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    pading:10px;
+    
+}
+header{
+    position: fixed;
+    z-index:10000;
+}
+header,section,footer{
+  width:  100%;
+}
+ 
+.hambur{
+    display: flex;
+    justify-content: left;
+    display: block;
+}
+nav.topnav {
+    background-color: #e6e6ff;
+}
+.topnav{
+    position: relative;
+     
+    width: 50px;
+     
+}
+ 
+
+/* The side navigation menu */
+.sidenav {
+    display: inline;
+    height: auto; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    display: inline;
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #ffff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px; /* Place content 60px from the top */
+    transition: 0.9s; /* 0.5 second transition effect to slide in the sidenav */
+    
+}
+.sidenav.active{
+    top:-20px;
+}
+ 
+/* The navigation menu links */
+.sidenav a {
+    padding: 4px 4px 22px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+ 
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #c7c7d1c2;
+}
+ 
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+ 
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  
+    overflow:hidden;
+    width:100%;
+}
+body {
+  overflow-x: hidden;
+}
+ 
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #b7e6fb;
+    overflow: hidden;
+    
+}
+#icoOpen{
+    background-color: #0b87c1;
+}
+#icoOpen path{
+    color: wheat;
+    background-color: #0b87c1;
+}
+
+#fondoicoOpen{
+    background-color: #0b87c1;
+    height: 45px;
+    
+}
+#fondoicoOpen.active{
+    display: inline-block;
+    
+    
+ 
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+   
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color:#0b87c1 ;
+}
+.topnav.active{
+    background-color:#0b87c1 ;
+    top: -8px;
+} 
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: black;
+}
+ 
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+ 
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+ 
+ 
+ 
+
+ 
+
+ 
+.cabecera{
+display: flex; 
+background-color: #0b87c1;
+height: 100px;
+width: 100%;
+align-items: center; 
+transition: 1.0s;
+
+}
+.cabecera.active{
+    align-items:inherit;
+    display: block;
+    transition: 1.0s;
+    height: 40px;
+}
+#logoheder{
+    
+    
+    position: absolute;
+    left: 45%;
+    top:60; 
+    text-align: center;
+}
+#logoheder.active{
+    background-image: url=("");
+}
+.navbar.navbar-4 .navbar-toggler-icon {
+    background-color: #b7e6fb;
+    color: #b7e6fb;
+    background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger7.svg?color=BFE100');
+    }
+.logoportadaig{
+    transition: 0.9;
+    position: relative;
+    height: 95px;
+    width: 90px;
+    left: 0;
+    padding: 0;
+    float: left;
+    margin-right: 10px; 
+    
+}
+.logoportadaig.active{  
+	transition: 0.9s;
+    height: 35px;
+    width: 30px;
+    top:3px;
+    position: relative;
+}
+.titulocabecera{
+    color:#FFFF;
+    display:inline-block;
+    position: relative;
+    top:20px;
+}
+.titulocabecera.active{
+    top:2px;
+    font-size: 30px;
+}    
+	 
+ 
+}
+.portada_scroll{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+   
+ 
+}
+#carousel1{
+    display: block;
+ 
+    background-color: #333;
+    width: 100%;
+    height: 600px;
+ 
+  
+    top:100px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background: no-repeat center center scroll;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.carousel-item img{
+    object-fit: cover;
+    background-color: #333;
+    width: 100%;
+ 
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+ 
+#ventanas{
+    position: relative;
+    top:60px;
+    display:block;
+    width: 100%;
+    height: 600px;
+    background-color:  #ffff;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.Mission{
+    max-width: 600px;
+    margin: 10px;
+    float: left;
+    width: 450px;
+    height:96%;
+    background-color: #ffff;
+}
+.titulo{
+    color:#0b87c1;
+}
+.different{
+    margin: 10px;
+    float: left;
+    width: 61%;
+    height:48%;
+    background-color: #333;
+}
+.pañuelos{
+    margin: 10px;
+    float: left;
+    width: 30%;
+    height:45%;
+    background-color: #ffff;
+}
+
+.sombreros{
+    margin: 10px;
+    float: left;
+    width: 30%;
+    height:45%;
+    background-color: #ffff;
+}
+
+#novedades{
+    display:inline-block;
+    width: 100%;
+    height: 400px;
+    background-color: #f2ccff;
+    margin-bottom: 30px;   
+}
+.novedades1{
+    margin: 10px;
+    float: left;
+    width: 400px;
+    height: 380px;
+    background-color: #b82e8a;
+}
+#carusel2{
+    background-color: #333;
+    width: 900px;
+    height: 380px;
+    position: relative;
+    left: 10px;
+    display: inline-block;
+    margin:10px;
+    justify-content: center;
+}
+ 
+#control2prev{
+    position: absolute;
+    top: 170px;
+}
+ 
+#seguinos{
+    display:inline-block;
+    width: 100%;
+    height: 400px;
+    background-color: #f2ccff;
+    margin-bottom: 30px;   
+    text-align: center;
+    align-items: center;
+    z-index:1;
+    
+}
+.titulo_seguinos{
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    top:30px;
+}
+.logoinstaseguinos{
+    display: inline-block;
+    position: relative;
+    padding-top: 40px;
+    width: 80px;
+    height: 120px;
+     
+    
+}
+.btnseguinos{
+    justify-content: center;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    top:100px;
+   
+    
+
+}
+
+#tituloFavoritos{
+    display:inline-block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;   
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.favoritos{
+    width: auto;
+    height:auto;
+    padding: 1%;
+    background-color: #ffccee;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 30px; 
+}
+
+
+.fotopersona img:hover{
+    position: relative;
+ 
+  
+     
+    
+    transition: 0.4s;
+    
+    margin-top: 4px;
+    top:-1px;
+}
+.textosaboutus{
+    position: absolute;
+    top:10px;
+    float:inline-start;
+    width: 100%;
+    margin-left: 20px;
+    color: #ffff;
+}
+.btncomprarprod{
+    
+    position: relative;
+    top:0px;
+    width: 300px;
+    height: 110px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+.tituloproductos{
+    position: relative;
+    padding-bottom:1px ;
+     
+}
+.precioproducto{
+    font-size: medium;
+    top:-10px;
+}
+.logocomprar{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top:-5px;
+   
+}
+.logocomprar2{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top:-5px;
+   
+}
+
+.sigamosconectados{
+    display:flex;
+    width: 100%;
+    height: 400px;
+    background-color: #f2ccff;
+      
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+     
+}
+.h1sigamosconectados{
+    display:inline-block;
+    position:relative;
+    font-size: 40px;
+    top:-40px;
+}
+.sigamosconectadosimputs{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.sigamosconectadosimputs{
+    position: relative;
+    display: flex;
+    align-items: center; 
+    display: block;
+}  
+.sigamosconectadosimputsboton{
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    display: block;
+}
+.email{
+    display: block;
+ 
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    border: #ff99dd;
+    margin-bottom: 10px;
+}
+.coment{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn2{
+        border-color: #e6e6ff;
+        transition: 0.2s;
+        border-style:ridge;
+        top:90px;
+        width: 100px;
+        height: 50px;
+        top:100px;
+        border-radius: 30px;
+}
+.redesycontactos{
+    
+      
+        
+        width: 100%;
+        height:100px;
+        background-color:#f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   
+}
+.iconosredes{
+    position: relative;
+  
+}
+
+#navegador{
+    position: relative;
+    margin: 0;
+    float:left; 
+    height: 30px;
+    width: 100%;
+}
+.navegador ul{
+    position: relative;
+list-style-type : none;
+
+}
+.navegador ul li{
+    position: relative;
+    display: inline-block;
+    padding: 10 10px;
+}
+.navegador ul li a{
+    display: inline-block;
+    width: 230px;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px 1px;
+    font-size: 20px;
+}
+#navegador ul li  :hover {
+    background-color: #f2f2f2;
+    
+}
+.navegadorinferior{
+    margin: 10px;
+    width: 100%;
+    height:100px;
+    background-color:rgba(234, 238, 237, 0.85);
+ 
+}
+.datosdecontacto{
+    margin: 10px;
+    width: 100%;
+    height: 300px;
+    background-color:rgba(234, 238, 237, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+     
+}
+.container{
+    position: relative;
+    display: inline;
+    width: auto;
+    margin: 20px;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right:15px; 
+}
+.pp{
+    position: relative;
+    display: inline;
+    
+    font-size: 18px;
+}
+.logocomprar3{
+    margin:10px;
+    width: 50px;
+    height: 50px;
+}
+
+
+footer{
+    background-color: #333;
+ 
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.parrafoPiepag{
+    color: wheat;
+}
+.piedepagina2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+ 
+.logostarjetas{
+    display: flex;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 31px;
+}
+
+.aboutus{
+  
+    display: inline-block;
+    
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    top:110px;
+    padding: 20px;
+    padding-bottom: 120px;
+    margin-bottom: 20px;
+    padding-top: 80px;
+    transition: 0.4s;
+    
+}
+.cards{
+    transition: 0.4s;
+    width: 300px;
+    height:305px;
+    background-color:blue;
+    margin-left: 20px;
+    margin-bottom: 130px;
+    float: left;
+    align-items: center;
+    margin-right: auto;
+    position: relative;    
+}
+.fotopersona:hover{
+width: 30px;
+transition: 2.0s;
+} 
+.cards .fotopersona{
+    
+   
+    width: 100%;
+    height:auto;
+    padding-bottom: 1px;
+    background-color:#0b87c1;
+    transition: 0.5s;
+    
+
+}
+.contact{
+    background-color: #333;
+    width: 100%;
+    height: 700px;
+    display: block;
+    position: relative;
+    top:110px;
+      
+}
+
+
+
+
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+.piepagina{
+    z-index: 1;
+display: block;
+    width: 100%;
+height: 20px;
+    background-color: #333;
+opacity: 1;
+}  
+footer{
+    position: relative;
+ 
+    display: block;
+   
+ 
+    background-color: #3c3c3c;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
